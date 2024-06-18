@@ -31,3 +31,22 @@ fetch("https://jsonplaceholder.typicode.com/users")
         });
     })
         .catch(error => console.log(error));
+
+let numbers = [1, 2, 3,4, 5];
+let maximum = Math.max(...numbers);
+
+console.log(maximum);
+
+// spread ... to create a shallow copy of an array (identical copy)
+let fruits = ["apple", "orange", "banana"];
+let newFruits = [fruits];
+let vegetables = ["tomatoe", "onion"];
+
+console.log(fruits);
+console.log(newFruits);
+
+newFruits = [...fruits];
+console.log(newFruits);
+
+let newArray = [...fruits, ...vegetables, "item1", "item2"];
+console.log(newArray);
